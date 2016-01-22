@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C7655FF1C50D58B0091E302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7655FE1C50D58B0091E302 /* main.m */; };
+		9C7656021C50D58B0091E302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656011C50D58B0091E302 /* AppDelegate.m */; };
+		9C7656051C50D58B0091E302 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656041C50D58B0091E302 /* ViewController.m */; };
+		9C7656081C50D58B0091E302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7656061C50D58B0091E302 /* Main.storyboard */; };
+		9C76560A1C50D58B0091E302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7656091C50D58B0091E302 /* Assets.xcassets */; };
+		9C76560D1C50D58B0091E302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C76560B1C50D58B0091E302 /* LaunchScreen.storyboard */; };
+		9C7656181C50D58B0091E302 /* PandaKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656171C50D58B0091E302 /* PandaKitDemoTests.m */; };
+		9C7656231C50D58B0091E302 /* PandaKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656221C50D58B0091E302 /* PandaKitDemoUITests.m */; };
+		9C76567C1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */; };
+		9C76567D1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */; };
+		9C76567E1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */; };
+		9C7656801C50E1DE0091E302 /* PDKArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C76567F1C50E1DE0091E302 /* PDKArrayTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C7656141C50D58B0091E302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C7655F21C50D58B0091E302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C7655F91C50D58B0091E302;
+			remoteInfo = PandaKitDemo;
+		};
+		9C76561F1C50D58B0091E302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C7655F21C50D58B0091E302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C7655F91C50D58B0091E302;
+			remoteInfo = PandaKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C7655FA1C50D58B0091E302 /* PandaKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7655FE1C50D58B0091E302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C7656001C50D58B0091E302 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C7656011C50D58B0091E302 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C7656031C50D58B0091E302 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C7656041C50D58B0091E302 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C7656071C50D58B0091E302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C7656091C50D58B0091E302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C76560C1C50D58B0091E302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C76560E1C50D58B0091E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7656131C50D58B0091E302 /* PandaKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7656171C50D58B0091E302 /* PandaKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandaKitDemoTests.m; sourceTree = "<group>"; };
+		9C7656191C50D58B0091E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C76561E1C50D58B0091E302 /* PandaKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7656221C50D58B0091E302 /* PandaKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandaKitDemoUITests.m; sourceTree = "<group>"; };
+		9C7656241C50D58B0091E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7656651C50E0F70091E302 /* PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandaKit.h; sourceTree = "<group>"; };
+		9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PandaKit.h"; sourceTree = "<group>"; };
+		9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PandaKit.m"; sourceTree = "<group>"; };
+		9C76566F1C50E0F70091E302 /* PDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCategory.h; sourceTree = "<group>"; };
+		9C76567F1C50E1DE0091E302 /* PDKArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKArrayTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C7655F71C50D58B0091E302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C7656101C50D58B0091E302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C76561B1C50D58B0091E302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C7655F11C50D58B0091E302 = {
+			isa = PBXGroup;
+			children = (
+				9C7656641C50E0F70091E302 /* PandaKit */,
+				9C7655FC1C50D58B0091E302 /* PandaKitDemo */,
+				9C7656161C50D58B0091E302 /* PandaKitDemoTests */,
+				9C7656211C50D58B0091E302 /* PandaKitDemoUITests */,
+				9C7655FB1C50D58B0091E302 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C7655FB1C50D58B0091E302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C7655FA1C50D58B0091E302 /* PandaKitDemo.app */,
+				9C7656131C50D58B0091E302 /* PandaKitDemoTests.xctest */,
+				9C76561E1C50D58B0091E302 /* PandaKitDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C7655FC1C50D58B0091E302 /* PandaKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656001C50D58B0091E302 /* AppDelegate.h */,
+				9C7656011C50D58B0091E302 /* AppDelegate.m */,
+				9C7656031C50D58B0091E302 /* ViewController.h */,
+				9C7656041C50D58B0091E302 /* ViewController.m */,
+				9C7656061C50D58B0091E302 /* Main.storyboard */,
+				9C7656091C50D58B0091E302 /* Assets.xcassets */,
+				9C76560B1C50D58B0091E302 /* LaunchScreen.storyboard */,
+				9C76560E1C50D58B0091E302 /* Info.plist */,
+				9C7655FD1C50D58B0091E302 /* Supporting Files */,
+			);
+			path = PandaKitDemo;
+			sourceTree = "<group>";
+		};
+		9C7655FD1C50D58B0091E302 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C7655FE1C50D58B0091E302 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C7656161C50D58B0091E302 /* PandaKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656171C50D58B0091E302 /* PandaKitDemoTests.m */,
+				9C7656191C50D58B0091E302 /* Info.plist */,
+				9C76567F1C50E1DE0091E302 /* PDKArrayTest.m */,
+			);
+			path = PandaKitDemoTests;
+			sourceTree = "<group>";
+		};
+		9C7656211C50D58B0091E302 /* PandaKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656221C50D58B0091E302 /* PandaKitDemoUITests.m */,
+				9C7656241C50D58B0091E302 /* Info.plist */,
+			);
+			path = PandaKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		9C7656641C50E0F70091E302 /* PandaKit */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656651C50E0F70091E302 /* PandaKit.h */,
+				9C7656661C50E0F70091E302 /* PDCore */,
+				9C76566B1C50E0F70091E302 /* PDExtension */,
+				9C7656711C50E0F70091E302 /* PDMVC */,
+				9C7656751C50E0F70091E302 /* PDUI */,
+				9C7656781C50E0F70091E302 /* PDUtility */,
+			);
+			name = PandaKit;
+			path = ../PandaKit;
+			sourceTree = "<group>";
+		};
+		9C7656661C50E0F70091E302 /* PDCore */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656671C50E0F70091E302 /* PDCache */,
+				9C7656681C50E0F70091E302 /* PDNetwork */,
+				9C7656691C50E0F70091E302 /* PDParser */,
+				9C76566A1C50E0F70091E302 /* PDStorage */,
+			);
+			path = PDCore;
+			sourceTree = "<group>";
+		};
+		9C7656671C50E0F70091E302 /* PDCache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDCache;
+			sourceTree = "<group>";
+		};
+		9C7656681C50E0F70091E302 /* PDNetwork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDNetwork;
+			sourceTree = "<group>";
+		};
+		9C7656691C50E0F70091E302 /* PDParser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDParser;
+			sourceTree = "<group>";
+		};
+		9C76566A1C50E0F70091E302 /* PDStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDStorage;
+			sourceTree = "<group>";
+		};
+		9C76566B1C50E0F70091E302 /* PDExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9C76566C1C50E0F70091E302 /* PDCategory */,
+				9C7656701C50E0F70091E302 /* PDMacro */,
+			);
+			path = PDExtension;
+			sourceTree = "<group>";
+		};
+		9C76566C1C50E0F70091E302 /* PDCategory */ = {
+			isa = PBXGroup;
+			children = (
+				9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */,
+				9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */,
+				9C76566F1C50E0F70091E302 /* PDCategory.h */,
+			);
+			path = PDCategory;
+			sourceTree = "<group>";
+		};
+		9C7656701C50E0F70091E302 /* PDMacro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDMacro;
+			sourceTree = "<group>";
+		};
+		9C7656711C50E0F70091E302 /* PDMVC */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656721C50E0F70091E302 /* PDBaseMVC */,
+				9C7656731C50E0F70091E302 /* PDPlugInManager */,
+				9C7656741C50E0F70091E302 /* PDRouter */,
+			);
+			path = PDMVC;
+			sourceTree = "<group>";
+		};
+		9C7656721C50E0F70091E302 /* PDBaseMVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDBaseMVC;
+			sourceTree = "<group>";
+		};
+		9C7656731C50E0F70091E302 /* PDPlugInManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDPlugInManager;
+			sourceTree = "<group>";
+		};
+		9C7656741C50E0F70091E302 /* PDRouter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDRouter;
+			sourceTree = "<group>";
+		};
+		9C7656751C50E0F70091E302 /* PDUI */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656761C50E0F70091E302 /* PDAnimation */,
+				9C7656771C50E0F70091E302 /* PDControl */,
+			);
+			path = PDUI;
+			sourceTree = "<group>";
+		};
+		9C7656761C50E0F70091E302 /* PDAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDAnimation;
+			sourceTree = "<group>";
+		};
+		9C7656771C50E0F70091E302 /* PDControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDControl;
+			sourceTree = "<group>";
+		};
+		9C7656781C50E0F70091E302 /* PDUtility */ = {
+			isa = PBXGroup;
+			children = (
+				9C7656791C50E0F70091E302 /* PDDebug */,
+				9C76567A1C50E0F70091E302 /* PDLog */,
+				9C76567B1C50E0F70091E302 /* PDPerformance */,
+			);
+			path = PDUtility;
+			sourceTree = "<group>";
+		};
+		9C7656791C50E0F70091E302 /* PDDebug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDDebug;
+			sourceTree = "<group>";
+		};
+		9C76567A1C50E0F70091E302 /* PDLog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDLog;
+			sourceTree = "<group>";
+		};
+		9C76567B1C50E0F70091E302 /* PDPerformance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDPerformance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C7655F91C50D58B0091E302 /* PandaKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C7656271C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemo" */;
+			buildPhases = (
+				9C7655F61C50D58B0091E302 /* Sources */,
+				9C7655F71C50D58B0091E302 /* Frameworks */,
+				9C7655F81C50D58B0091E302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PandaKitDemo;
+			productName = PandaKitDemo;
+			productReference = 9C7655FA1C50D58B0091E302 /* PandaKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C7656121C50D58B0091E302 /* PandaKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C76562A1C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemoTests" */;
+			buildPhases = (
+				9C76560F1C50D58B0091E302 /* Sources */,
+				9C7656101C50D58B0091E302 /* Frameworks */,
+				9C7656111C50D58B0091E302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C7656151C50D58B0091E302 /* PBXTargetDependency */,
+			);
+			name = PandaKitDemoTests;
+			productName = PandaKitDemoTests;
+			productReference = 9C7656131C50D58B0091E302 /* PandaKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C76561D1C50D58B0091E302 /* PandaKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C76562D1C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemoUITests" */;
+			buildPhases = (
+				9C76561A1C50D58B0091E302 /* Sources */,
+				9C76561B1C50D58B0091E302 /* Frameworks */,
+				9C76561C1C50D58B0091E302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C7656201C50D58B0091E302 /* PBXTargetDependency */,
+			);
+			name = PandaKitDemoUITests;
+			productName = PandaKitDemoUITests;
+			productReference = 9C76561E1C50D58B0091E302 /* PandaKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C7655F21C50D58B0091E302 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = panda;
+				TargetAttributes = {
+					9C7655F91C50D58B0091E302 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9C7656121C50D58B0091E302 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9C7655F91C50D58B0091E302;
+					};
+					9C76561D1C50D58B0091E302 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9C7655F91C50D58B0091E302;
+					};
+				};
+			};
+			buildConfigurationList = 9C7655F51C50D58B0091E302 /* Build configuration list for PBXProject "PandaKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C7655F11C50D58B0091E302;
+			productRefGroup = 9C7655FB1C50D58B0091E302 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C7655F91C50D58B0091E302 /* PandaKitDemo */,
+				9C7656121C50D58B0091E302 /* PandaKitDemoTests */,
+				9C76561D1C50D58B0091E302 /* PandaKitDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C7655F81C50D58B0091E302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C76560D1C50D58B0091E302 /* LaunchScreen.storyboard in Resources */,
+				9C76560A1C50D58B0091E302 /* Assets.xcassets in Resources */,
+				9C7656081C50D58B0091E302 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C7656111C50D58B0091E302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C76561C1C50D58B0091E302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C7655F61C50D58B0091E302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C76567C1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */,
+				9C7656051C50D58B0091E302 /* ViewController.m in Sources */,
+				9C7656021C50D58B0091E302 /* AppDelegate.m in Sources */,
+				9C7655FF1C50D58B0091E302 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C76560F1C50D58B0091E302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7656801C50E1DE0091E302 /* PDKArrayTest.m in Sources */,
+				9C76567D1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */,
+				9C7656181C50D58B0091E302 /* PandaKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C76561A1C50D58B0091E302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C76567E1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */,
+				9C7656231C50D58B0091E302 /* PandaKitDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C7656151C50D58B0091E302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C7655F91C50D58B0091E302 /* PandaKitDemo */;
+			targetProxy = 9C7656141C50D58B0091E302 /* PBXContainerItemProxy */;
+		};
+		9C7656201C50D58B0091E302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C7655F91C50D58B0091E302 /* PandaKitDemo */;
+			targetProxy = 9C76561F1C50D58B0091E302 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C7656061C50D58B0091E302 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C7656071C50D58B0091E302 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C76560B1C50D58B0091E302 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C76560C1C50D58B0091E302 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C7656251C50D58B0091E302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C7656261C50D58B0091E302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C7656281C50D58B0091E302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PandaKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mt.PandaKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C7656291C50D58B0091E302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PandaKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mt.PandaKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C76562B1C50D58B0091E302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PandaKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mt.PandaKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaKitDemo.app/PandaKitDemo";
+			};
+			name = Debug;
+		};
+		9C76562C1C50D58B0091E302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PandaKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mt.PandaKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaKitDemo.app/PandaKitDemo";
+			};
+			name = Release;
+		};
+		9C76562E1C50D58B0091E302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PandaKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mt.PandaKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PandaKitDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9C76562F1C50D58B0091E302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PandaKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mt.PandaKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PandaKitDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C7655F51C50D58B0091E302 /* Build configuration list for PBXProject "PandaKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7656251C50D58B0091E302 /* Debug */,
+				9C7656261C50D58B0091E302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C7656271C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7656281C50D58B0091E302 /* Debug */,
+				9C7656291C50D58B0091E302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C76562A1C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C76562B1C50D58B0091E302 /* Debug */,
+				9C76562C1C50D58B0091E302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C76562D1C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C76562E1C50D58B0091E302 /* Debug */,
+				9C76562F1C50D58B0091E302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C7655F21C50D58B0091E302 /* Project object */;
+}
