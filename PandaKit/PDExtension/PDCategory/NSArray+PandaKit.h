@@ -17,21 +17,21 @@
 /**
  *  同步顺序遍历数组中的元素
  *
- *  @param block <#block description#>
+ *  @param block 匿名函数体。
  */
 - (void)pk_each:(void (^)(id obj))block;
 
 /**
  *  异步顺序遍历数组中的元素
  *
- *  @param block <#block description#>
+ *  @param block 匿名函数体。
  */
 - (void)pk_apply:(void (^)(id obj))block;
 
 /**
  *  首个匹配的值。
  *
- *  @param block <#block description#>
+ *  @param block 匿名函数体。
  *
  *  @return 当 block 返回 YES 时，返回当前的元素并停止遍历。
  */
@@ -40,7 +40,7 @@
 /**
  *  全部匹配的值。
  *
- *  @param block <#block description#>
+ *  @param block 匿名函数体。
  *
  *  @return 当 block 返回 YES 时，记录当前的元素，遍历结束时返回包含全部记录元素的数组。
  */
@@ -49,7 +49,7 @@
 /**
  *  返回全部不匹配的值。
  *
- *  @param block <#block description#>
+ *  @param block 匿名函数体。
  *
  *  @return 当 block 返回 NO 时，记录当前元素，遍历结束时返回包含全部记录元素的数组。
  */
@@ -58,7 +58,7 @@
 /**
  *  将旧的数组元素，通过一个 block 映射到新的数组中。
  *
- *  @param block <#block description#>
+ *  @param block 匿名函数体。
  *
  *  @return 所有 block 返回的值将会形成一个新的数组，遍历结束时返回该数组。
  */
@@ -68,9 +68,9 @@
  *  遍历旧的数组，将返回的结果继续和序列的下一个元素做累积计算。
  *
  *  @param initial 累算元素初始值
- *  @param block   <#block description#>
+ *  @param block   匿名函数体。
  *
- *  @return 便利结束后，返回 block 中累算元素 sum 的值。
+ *  @return 遍历结束后，返回 block 中累算元素 sum 的值。
  */
 - (id)pk_reduce:(id)initial withBlock:(id (^)(id sum, id obj))block;
 - (NSInteger)pk_reduceInteger:(NSInteger)initial withBlock:(NSInteger (^)(NSInteger result, id obj))block;
