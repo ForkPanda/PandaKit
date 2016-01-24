@@ -42,6 +42,17 @@
     XCTAssert(r1 == nil && [r2 isEqualToString:@"first object"] && [r3 isEqualToString:@"first object"], @"Pass");
 }
 
+- (void)testArrayAppendObject
+{
+    NSMutableArray* muArr = @[].mutableCopy;
+    muArr.add(@"x").add(nil).add(@9);
+    BOOL result = [muArr isEqualToArray:@[ @"x", @9 ]];
+    XCTAssert(result, @"Pass");
+    
+    [muArr addObject:@"x"];
+    [muArr addObject:@9];
+}
+
 - (void)testPerformanceExample
 {
     // This is an example of a performance test case.

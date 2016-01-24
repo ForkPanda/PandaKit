@@ -10,7 +10,16 @@
 
 @interface NSArray (PandaKit)
 
+#pragma QuickKit
 - (id)pk_firstObject;
+
+- (NSArray*)pk_leadN:(NSUInteger)amount;
+- (NSArray*)pk_trailN:(NSUInteger)amount;
+
+- (id)pk_objectAtIndex:(NSInteger)index;
+- (NSArray*)pk_subArrayWithRange:(NSRange)range;
+- (NSArray*)pk_subArrayFromIndex:(NSUInteger)index;
+- (NSArray*)pk_subArrayToIndex:(NSUInteger)index;
 
 #pragma BlockKit
 
@@ -75,5 +84,34 @@
 - (id)pk_reduce:(id)initial withBlock:(id (^)(id sum, id obj))block;
 - (NSInteger)pk_reduceInteger:(NSInteger)initial withBlock:(NSInteger (^)(NSInteger result, id obj))block;
 - (CGFloat)pk_reduceFloat:(CGFloat)inital withBlock:(CGFloat (^)(CGFloat result, id obj))block;
+
+@end
+
+@interface NSMutableArray (PandaKit)
+
+/**
+ *  返回一个不会使元素增加引用计数的数组，如用于多路代理。
+ *
+ *  @return 返回不会使元素增加引用计数的数组。
+ */
++ (NSMutableArray*)pk_nonRetainingArray;
+
+/**
+ *  对可变数组进行操作。
+ *
+ *  @return 对这个可变数组进行相对应的操作，并将可变数组返回。
+ */
+- (NSMutableArray*)pk_pushLead:(NSObject*)obj;
+- (NSMutableArray*)pk_pushLeadN:(NSArray*)all;
+- (NSMutableArray*)pk_popLead;
+- (NSMutableArray*)pk_popLeadN:(NSUInteger)n;
+
+- (NSMutableArray*)pk_pushTrail:(NSObject*)obj;
+- (NSMutableArray*)pk_pushTrailN:(NSArray*)all;
+- (NSMutableArray*)pk_popTrail;
+- (NSMutableArray*)pk_popTrailN:(NSUInteger)n;
+
+- (NSMutableArray*)pk_keepLead:(NSUInteger)n;
+- (NSMutableArray*)pk_keepTrail:(NSUInteger)n;
 
 @end
