@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496339A935322AD9176806DC /* libPods-PandaKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EB70137EE4F215B595807D /* libPods-PandaKitDemo.a */; };
 		9C7655FF1C50D58B0091E302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7655FE1C50D58B0091E302 /* main.m */; };
 		9C7656021C50D58B0091E302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656011C50D58B0091E302 /* AppDelegate.m */; };
 		9C7656051C50D58B0091E302 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656041C50D58B0091E302 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18EB70137EE4F215B595807D /* libPods-PandaKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA243E38AFA0756B52E5C42 /* Pods-PandaKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaKitDemo/Pods-PandaKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9C7655FA1C50D58B0091E302 /* PandaKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7655FE1C50D58B0091E302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C7656001C50D58B0091E302 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,10 +59,11 @@
 		9C7656221C50D58B0091E302 /* PandaKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandaKitDemoUITests.m; sourceTree = "<group>"; };
 		9C7656241C50D58B0091E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7656651C50E0F70091E302 /* PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandaKit.h; sourceTree = "<group>"; };
-		9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PandaKit.h"; sourceTree = "<group>"; };
-		9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PandaKit.m"; sourceTree = "<group>"; };
+		9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+PandaKit.h"; path = "../NSArray+PandaKit.h"; sourceTree = "<group>"; };
+		9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PandaKit.m"; path = "../NSArray+PandaKit.m"; sourceTree = "<group>"; };
 		9C76566F1C50E0F70091E302 /* PDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCategory.h; sourceTree = "<group>"; };
 		9C76567F1C50E1DE0091E302 /* PDKArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKArrayTest.m; sourceTree = "<group>"; };
+		F615E34334D881E90E739B2E /* Pods-PandaKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaKitDemo/Pods-PandaKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496339A935322AD9176806DC /* libPods-PandaKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02DC178CDE6A8917AB5EB770 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F615E34334D881E90E739B2E /* Pods-PandaKitDemo.debug.xcconfig */,
+				6EA243E38AFA0756B52E5C42 /* Pods-PandaKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86D623F394B6855D3E1EA373 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EB70137EE4F215B595807D /* libPods-PandaKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C7655F11C50D58B0091E302 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +117,8 @@
 				9C7656161C50D58B0091E302 /* PandaKitDemoTests */,
 				9C7656211C50D58B0091E302 /* PandaKitDemoUITests */,
 				9C7655FB1C50D58B0091E302 /* Products */,
+				02DC178CDE6A8917AB5EB770 /* Pods */,
+				86D623F394B6855D3E1EA373 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,9 +240,9 @@
 		9C76566C1C50E0F70091E302 /* PDCategory */ = {
 			isa = PBXGroup;
 			children = (
-				9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */,
-				9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */,
 				9C76566F1C50E0F70091E302 /* PDCategory.h */,
+				9CF077841C55F95B002A02E9 /* Foundation */,
+				9CF077851C55F95B002A02E9 /* UI */,
 			);
 			path = PDCategory;
 			sourceTree = "<group>";
@@ -315,6 +339,22 @@
 			path = PDPerformance;
 			sourceTree = "<group>";
 		};
+		9CF077841C55F95B002A02E9 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */,
+				9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9CF077851C55F95B002A02E9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,9 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C7656271C50D58B0091E302 /* Build configuration list for PBXNativeTarget "PandaKitDemo" */;
 			buildPhases = (
+				BE73B58E575539A55E771D08 /* Check Pods Manifest.lock */,
 				9C7655F61C50D58B0091E302 /* Sources */,
 				9C7655F71C50D58B0091E302 /* Frameworks */,
 				9C7655F81C50D58B0091E302 /* Resources */,
+				16A9CC32E59147EFB801AA7E /* Embed Pods Frameworks */,
+				A692E4283628FEBC2E33AB0C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,6 +482,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16A9CC32E59147EFB801AA7E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaKitDemo/Pods-PandaKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A692E4283628FEBC2E33AB0C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaKitDemo/Pods-PandaKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE73B58E575539A55E771D08 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C7655F61C50D58B0091E302 /* Sources */ = {
@@ -590,6 +681,7 @@
 		};
 		9C7656281C50D58B0091E302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F615E34334D881E90E739B2E /* Pods-PandaKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PandaKitDemo/Info.plist;
@@ -601,6 +693,7 @@
 		};
 		9C7656291C50D58B0091E302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA243E38AFA0756B52E5C42 /* Pods-PandaKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PandaKitDemo/Info.plist;
