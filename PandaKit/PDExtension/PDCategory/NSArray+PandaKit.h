@@ -10,18 +10,19 @@
 
 @interface NSArray (PandaKit)
 
-#pragma QuickKit
+#pragma - QuickKit
 - (id)pk_firstObject;
+- (id)pk_lastObject;
+- (id)pk_objectAtIndex:(NSInteger)index;
 
 - (NSArray*)pk_leadN:(NSUInteger)amount;
 - (NSArray*)pk_trailN:(NSUInteger)amount;
 
-- (id)pk_objectAtIndex:(NSInteger)index;
 - (NSArray*)pk_subArrayWithRange:(NSRange)range;
 - (NSArray*)pk_subArrayFromIndex:(NSUInteger)index;
 - (NSArray*)pk_subArrayToIndex:(NSUInteger)index;
 
-#pragma BlockKit
+#pragma - BlockKit
 
 /**
  *  同步顺序遍历数组中的元素
@@ -99,17 +100,17 @@
 /**
  *  对可变数组进行操作。
  *
- *  @return 对这个可变数组进行相对应的操作，并将可变数组返回。
+ *  @return 对这个可变数组进行相对应的操作，并将可变数组 self 返回。
  */
-- (NSMutableArray*)pk_pushLead:(NSObject*)obj;
-- (NSMutableArray*)pk_pushLeadN:(NSArray*)all;
-- (NSMutableArray*)pk_popLead;
-- (NSMutableArray*)pk_popLeadN:(NSUInteger)n;
+- (void)pk_pushLead:(NSObject*)obj;
+- (void)pk_pushLeadN:(NSArray*)all;
+- (void)pk_pushTrail:(NSObject*)obj;
+- (void)pk_pushTrailN:(NSArray*)all;
 
-- (NSMutableArray*)pk_pushTrail:(NSObject*)obj;
-- (NSMutableArray*)pk_pushTrailN:(NSArray*)all;
-- (NSMutableArray*)pk_popTrail;
-- (NSMutableArray*)pk_popTrailN:(NSUInteger)n;
+- (id)pk_popLead;
+- (NSArray*)pk_popLeadN:(NSUInteger)n;
+- (id)pk_popTrail;
+- (NSArray*)pk_popTrailN:(NSUInteger)n;
 
 - (NSMutableArray*)pk_keepLead:(NSUInteger)n;
 - (NSMutableArray*)pk_keepTrail:(NSUInteger)n;
