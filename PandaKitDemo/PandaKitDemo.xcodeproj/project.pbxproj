@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		496339A935322AD9176806DC /* libPods-PandaKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EB70137EE4F215B595807D /* libPods-PandaKitDemo.a */; };
+		9C105F2D1C58687700215A25 /* NSDictionary+PandaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C105F2C1C58687700215A25 /* NSDictionary+PandaKit.m */; };
 		9C7655FF1C50D58B0091E302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7655FE1C50D58B0091E302 /* main.m */; };
 		9C7656021C50D58B0091E302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656011C50D58B0091E302 /* AppDelegate.m */; };
 		9C7656051C50D58B0091E302 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656041C50D58B0091E302 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		18EB70137EE4F215B595807D /* libPods-PandaKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA243E38AFA0756B52E5C42 /* Pods-PandaKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaKitDemo/Pods-PandaKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9C105F2B1C58687700215A25 /* NSDictionary+PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PandaKit.h"; sourceTree = "<group>"; };
+		9C105F2C1C58687700215A25 /* NSDictionary+PandaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PandaKit.m"; sourceTree = "<group>"; };
 		9C7655FA1C50D58B0091E302 /* PandaKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7655FE1C50D58B0091E302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C7656001C50D58B0091E302 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 			children = (
 				9C76566D1C50E0F70091E302 /* NSArray+PandaKit.h */,
 				9C76566E1C50E0F70091E302 /* NSArray+PandaKit.m */,
+				9C105F2B1C58687700215A25 /* NSDictionary+PandaKit.h */,
+				9C105F2C1C58687700215A25 /* NSDictionary+PandaKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C105F2D1C58687700215A25 /* NSDictionary+PandaKit.m in Sources */,
 				9C76567C1C50E0F70091E302 /* NSArray+PandaKit.m in Sources */,
 				9C7656051C50D58B0091E302 /* ViewController.m in Sources */,
 				9C7656021C50D58B0091E302 /* AppDelegate.m in Sources */,
