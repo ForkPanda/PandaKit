@@ -11,16 +11,16 @@
 @interface NSArray (PandaKit)
 
 #pragma - QuickKit
-- (id)pk_firstObject;
-- (id)pk_lastObject;
-- (id)pk_objectAtIndex:(NSInteger)index;
+- (id)pd_firstObject;
+- (id)pd_lastObject;
+- (id)pd_objectAtIndex:(NSInteger)index;
 
-- (NSArray*)pk_leadN:(NSUInteger)amount;
-- (NSArray*)pk_trailN:(NSUInteger)amount;
+- (NSArray*)pd_leadN:(NSUInteger)amount;
+- (NSArray*)pd_trailN:(NSUInteger)amount;
 
-- (NSArray*)pk_subArrayWithRange:(NSRange)range;
-- (NSArray*)pk_subArrayFromIndex:(NSUInteger)index;
-- (NSArray*)pk_subArrayToIndex:(NSUInteger)index;
+- (NSArray*)pd_subArrayWithRange:(NSRange)range;
+- (NSArray*)pd_subArrayFromIndex:(NSUInteger)index;
+- (NSArray*)pd_subArrayToIndex:(NSUInteger)index;
 
 #pragma - BlockKit
 
@@ -29,14 +29,14 @@
  *
  *  @param block 匿名函数体。
  */
-- (void)pk_each:(void (^)(id obj))block;
+- (void)pd_each:(void (^)(id obj))block;
 
 /**
  *  异步顺序遍历数组中的元素
  *
  *  @param block 匿名函数体。
  */
-- (void)pk_apply:(void (^)(id obj))block;
+- (void)pd_apply:(void (^)(id obj))block;
 
 /**
  *  首个匹配的值。
@@ -45,7 +45,7 @@
  *
  *  @return 当 block 返回 YES 时，返回当前的元素并停止遍历。
  */
-- (id)pk_match:(BOOL (^)(id obj))block;
+- (id)pd_match:(BOOL (^)(id obj))block;
 
 /**
  *  全部匹配的值。
@@ -54,7 +54,7 @@
  *
  *  @return 当 block 返回 YES 时，记录当前的元素，遍历结束时返回包含全部记录元素的数组。
  */
-- (NSArray*)pk_select:(BOOL (^)(id obj))block;
+- (NSArray*)pd_select:(BOOL (^)(id obj))block;
 
 /**
  *  返回全部不匹配的值。
@@ -63,7 +63,7 @@
  *
  *  @return 当 block 返回 NO 时，记录当前元素，遍历结束时返回包含全部记录元素的数组。
  */
-- (NSArray*)pk_reject:(BOOL (^)(id obj))block;
+- (NSArray*)pd_reject:(BOOL (^)(id obj))block;
 
 /**
  *  将旧的数组元素，通过一个 block 映射到新的数组中。
@@ -72,7 +72,7 @@
  *
  *  @return 所有 block 返回的值将会形成一个新的数组，遍历结束时返回该数组。
  */
-- (NSArray*)pk_map:(id (^)(id obj))block;
+- (NSArray*)pd_map:(id (^)(id obj))block;
 
 /**
  *  遍历旧的数组，将返回的结果继续和序列的下一个元素做累积计算。
@@ -82,9 +82,9 @@
  *
  *  @return 遍历结束后，返回 block 中累算元素 sum 的值。
  */
-- (id)pk_reduce:(id)initial withBlock:(id (^)(id sum, id obj))block;
-- (NSInteger)pk_reduceInteger:(NSInteger)initial withBlock:(NSInteger (^)(NSInteger result, id obj))block;
-- (CGFloat)pk_reduceFloat:(CGFloat)inital withBlock:(CGFloat (^)(CGFloat result, id obj))block;
+- (id)pd_reduce:(id)initial withBlock:(id (^)(id sum, id obj))block;
+- (NSInteger)pd_reduceInteger:(NSInteger)initial withBlock:(NSInteger (^)(NSInteger result, id obj))block;
+- (CGFloat)pd_reduceFloat:(CGFloat)inital withBlock:(CGFloat (^)(CGFloat result, id obj))block;
 
 @end
 
@@ -95,24 +95,24 @@
  *
  *  @return 返回不会使元素增加引用计数的数组。
  */
-+ (NSMutableArray*)pk_nonRetainingArray;
++ (NSMutableArray*)pd_nonRetainingArray;
 
 /**
  *  对可变数组进行操作。
  *
  *  @return 对这个可变数组进行相对应的操作，并将可变数组 self 返回。
  */
-- (void)pk_pushLead:(NSObject*)obj;
-- (void)pk_pushLeadN:(NSArray*)all;
-- (void)pk_pushTrail:(NSObject*)obj;
-- (void)pk_pushTrailN:(NSArray*)all;
+- (void)pd_pushLead:(NSObject*)obj;
+- (void)pd_pushLeadN:(NSArray*)all;
+- (void)pd_pushTrail:(NSObject*)obj;
+- (void)pd_pushTrailN:(NSArray*)all;
 
-- (id)pk_popLead;
-- (NSArray*)pk_popLeadN:(NSUInteger)n;
-- (id)pk_popTrail;
-- (NSArray*)pk_popTrailN:(NSUInteger)n;
+- (id)pd_popLead;
+- (NSArray*)pd_popLeadN:(NSUInteger)n;
+- (id)pd_popTrail;
+- (NSArray*)pd_popTrailN:(NSUInteger)n;
 
-- (NSMutableArray*)pk_keepLead:(NSUInteger)n;
-- (NSMutableArray*)pk_keepTrail:(NSUInteger)n;
+- (NSMutableArray*)pd_keepLead:(NSUInteger)n;
+- (NSMutableArray*)pd_keepTrail:(NSUInteger)n;
 
 @end

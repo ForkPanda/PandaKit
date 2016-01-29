@@ -10,12 +10,12 @@
 
 @implementation NSDictionary (PandaKit)
 
-- (id)pk_ObjectForKey:(id<NSCopying>)key;
+- (id)pd_ObjectForKey:(id<NSCopying>)key;
 {
     return key ? self[key] : nil;
 }
 
-- (void)pk_each:(void (^)(id key, id obj))block
+- (void)pd_each:(void (^)(id key, id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -24,7 +24,7 @@
     }];
 }
 
-- (void)pk_apply:(void (^)(id key, id obj))block
+- (void)pd_apply:(void (^)(id key, id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -33,7 +33,7 @@
     }];
 }
 
-- (id)pk_match:(BOOL (^)(id key, id obj))block
+- (id)pd_match:(BOOL (^)(id key, id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -47,7 +47,7 @@
     }] anyObject]];
 }
 
-- (NSDictionary*)pk_select:(BOOL (^)(id key, id obj))block
+- (NSDictionary*)pd_select:(BOOL (^)(id key, id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -59,21 +59,21 @@
     return [NSDictionary dictionaryWithObjects:objects forKeys:keys];
 }
 
-- (NSDictionary*)pk_reject:(BOOL (^)(id key, id obj))block
+- (NSDictionary*)pd_reject:(BOOL (^)(id key, id obj))block
 {
     NSParameterAssert(block != nil);
-    return [self pk_select:^BOOL(id key, id obj) {
+    return [self pd_select:^BOOL(id key, id obj) {
         return !block(key, obj);
     }];
 }
 
-- (NSDictionary*)pk_map:(id (^)(id key, id obj))block
+- (NSDictionary*)pd_map:(id (^)(id key, id obj))block
 {
     NSParameterAssert(block != nil);
 
     NSMutableDictionary* result = [NSMutableDictionary dictionaryWithCapacity:self.count];
 
-    [self pk_each:^(id key, id obj) {
+    [self pd_each:^(id key, id obj) {
         id value = block(key, obj) ?: [NSNull null];
         result[key] = value;
     }];
@@ -85,22 +85,22 @@
 
 @implementation NSMutableDictionary (PandaKit)
 
-+ (NSMutableDictionary*)pk_nonRetainDictionary;
++ (NSMutableDictionary*)pd_nonRetainDictionary;
 {
     return (__bridge_transfer NSMutableDictionary*)CFDictionaryCreateMutable(nil, 0, &kCFCopyStringDictionaryKeyCallBacks, NULL);
 }
 
-- (void)pk_setObject:(id)anObject forKey:(id<NSCopying>)key;
+- (void)pd_setObject:(id)anObject forKey:(id<NSCopying>)key;
 {
     key ? self[key] = anObject : nil;
 }
 
-- (void)pk_setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key;
+- (void)pd_setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key;
 {
     key ? [self setObject:obj forKeyedSubscript:key] : nil;
 }
 
-- (void)pk_removeObjectForKey:(id<NSCopying>)key;
+- (void)pd_removeObjectForKey:(id<NSCopying>)key;
 {
     key ? [self removeObjectForKey:key] : nil;
 }

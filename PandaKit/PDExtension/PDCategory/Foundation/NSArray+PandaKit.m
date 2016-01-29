@@ -10,49 +10,49 @@
 
 @implementation NSArray (PandaKit)
 
-- (id)pk_firstObject;
+- (id)pd_firstObject;
 {
     return self.count > 0 ? self[0] : nil;
 }
 
-- (id)pk_lastObject;
+- (id)pd_lastObject;
 {
     return self.count > 0 ? self[self.count - 1] : nil;
 }
 
-- (id)pk_objectAtIndex:(NSInteger)index
+- (id)pd_objectAtIndex:(NSInteger)index
 {
     return index > 0 && index < self.count ? self[index] : nil;
 }
 
-- (NSArray*)pk_leadN:(NSUInteger)amount;
+- (NSArray*)pd_leadN:(NSUInteger)amount;
 {
     return self.count < amount ? self : [self subarrayWithRange:NSMakeRange(0, amount)];
 }
 
-- (NSArray*)pk_trailN:(NSUInteger)amount;
+- (NSArray*)pd_trailN:(NSUInteger)amount;
 {
     return self.count < amount ? self : [self subarrayWithRange:NSMakeRange(self.count - amount, amount)];
 }
 
-- (NSArray*)pk_subArrayWithRange:(NSRange)range;
+- (NSArray*)pd_subArrayWithRange:(NSRange)range;
 {
     return self.count < range.length + range.location ? self : [self subarrayWithRange:range];
 }
 
-- (NSArray*)pk_subArrayFromIndex:(NSUInteger)index;
+- (NSArray*)pd_subArrayFromIndex:(NSUInteger)index;
 {
     return self.count > index ? [self subarrayWithRange:NSMakeRange(index, self.count - index)] : self;
 }
 
-- (NSArray*)pk_subArrayToIndex:(NSUInteger)index;
+- (NSArray*)pd_subArrayToIndex:(NSUInteger)index;
 {
     return self.count > index ? [self subarrayWithRange:NSMakeRange(0, index)] : self;
 }
 
 #pragma - BlockKit
 
-- (void)pk_each:(void (^)(id obj))block
+- (void)pd_each:(void (^)(id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -61,7 +61,7 @@
     }];
 }
 
-- (void)pk_apply:(void (^)(id obj))block
+- (void)pd_apply:(void (^)(id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -70,7 +70,7 @@
     }];
 }
 
-- (id)pk_match:(BOOL (^)(id obj))block
+- (id)pd_match:(BOOL (^)(id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -84,7 +84,7 @@
     return self[index];
 }
 
-- (NSArray*)pk_select:(BOOL (^)(id obj))block
+- (NSArray*)pd_select:(BOOL (^)(id obj))block
 {
     NSParameterAssert(block != nil);
     return [self objectsAtIndexes:[self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL* stop) {
@@ -92,15 +92,15 @@
                  }]];
 }
 
-- (NSArray*)pk_reject:(BOOL (^)(id obj))block
+- (NSArray*)pd_reject:(BOOL (^)(id obj))block
 {
     NSParameterAssert(block != nil);
-    return [self pk_select:^BOOL(id obj) {
+    return [self pd_select:^BOOL(id obj) {
         return !block(obj);
     }];
 }
 
-- (NSArray*)pk_map:(id (^)(id obj))block
+- (NSArray*)pd_map:(id (^)(id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -114,7 +114,7 @@
     return result;
 }
 
-- (id)pk_reduce:(id)initial withBlock:(id (^)(id sum, id obj))block
+- (id)pd_reduce:(id)initial withBlock:(id (^)(id sum, id obj))block
 {
     NSParameterAssert(block != nil);
 
@@ -127,7 +127,7 @@
     return result;
 }
 
-- (NSInteger)pk_reduceInteger:(NSInteger)initial withBlock:(NSInteger (^)(NSInteger, id))block
+- (NSInteger)pd_reduceInteger:(NSInteger)initial withBlock:(NSInteger (^)(NSInteger, id))block
 {
     NSParameterAssert(block != nil);
 
@@ -140,7 +140,7 @@
     return result;
 }
 
-- (CGFloat)pk_reduceFloat:(CGFloat)inital withBlock:(CGFloat (^)(CGFloat, id))block
+- (CGFloat)pd_reduceFloat:(CGFloat)inital withBlock:(CGFloat (^)(CGFloat, id))block
 {
     NSParameterAssert(block != nil);
 
@@ -157,13 +157,13 @@
 
 @implementation NSMutableArray (PandaKit)
 
-+ (NSMutableArray*)pk_nonRetainingArray;
++ (NSMutableArray*)pd_nonRetainingArray;
 {
     CFArrayCallBacks callbacks = { 0, NULL, NULL, CFCopyDescription, CFEqual };
     return (__bridge_transfer NSMutableArray*)(CFArrayCreateMutable(0, 0, &callbacks));
 }
 
-- (void)pk_pushLead:(NSObject*)obj;
+- (void)pd_pushLead:(NSObject*)obj;
 {
 
     if (obj) {
@@ -174,7 +174,7 @@
     }
 }
 
-- (void)pk_pushLeadN:(NSArray*)all;
+- (void)pd_pushLeadN:(NSArray*)all;
 {
     NSParameterAssert(all != nil);
 
@@ -182,20 +182,20 @@
         [self insertObjects:all atIndexes:[NSIndexSet indexSetWithIndex:0]];
     }
 }
-- (void)pk_pushTrail:(NSObject*)obj;
+- (void)pd_pushTrail:(NSObject*)obj;
 {
     if (obj) {
         [self addObject:obj];
     }
 }
-- (void)pk_pushTrailN:(NSArray*)all;
+- (void)pd_pushTrailN:(NSArray*)all;
 {
     if ([all count]) {
         [self addObjectsFromArray:all];
     }
 }
 
-- (id)pk_popLead;
+- (id)pd_popLead;
 {
     id temp = nil;
     if (self.count > 0) {
@@ -205,7 +205,7 @@
     return temp;
 }
 
-- (NSArray*)pk_popLeadN:(NSUInteger)n;
+- (NSArray*)pd_popLeadN:(NSUInteger)n;
 {
     NSMutableArray* temp = @[].mutableCopy;
     [self enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
@@ -221,7 +221,7 @@
     return temp;
 }
 
-- (id)pk_popTrail;
+- (id)pd_popTrail;
 {
     id temp = nil;
     if (self.count > 0) {
@@ -231,7 +231,7 @@
     return temp;
 }
 
-- (NSArray*)pk_popTrailN:(NSUInteger)n;
+- (NSArray*)pd_popTrailN:(NSUInteger)n;
 {
     NSMutableArray* temp = @[].mutableCopy;
     [self enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL* _Nonnull stop) {
@@ -246,7 +246,7 @@
     return temp;
 }
 
-- (NSMutableArray*)pk_keepLead:(NSUInteger)n;
+- (NSMutableArray*)pd_keepLead:(NSUInteger)n;
 {
     if ([self count] > n) {
         NSRange range;
@@ -259,7 +259,7 @@
     return self;
 }
 
-- (NSMutableArray*)pk_keepTrail:(NSUInteger)n;
+- (NSMutableArray*)pd_keepTrail:(NSUInteger)n;
 {
     if ([self count] > n) {
         NSRange range;

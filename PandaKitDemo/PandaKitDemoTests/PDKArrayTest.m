@@ -44,13 +44,6 @@
 
 - (void)testArrayAppendObject
 {
-    NSMutableArray* muArr = @[].mutableCopy;
-    muArr.add(@"x").add(nil).add(@9);
-    BOOL result = [muArr isEqualToArray:@[ @"x", @9 ]];
-    XCTAssert(result, @"Pass");
-    
-    [muArr addObject:@"x"];
-    [muArr addObject:@9];
 }
 
 - (void)testPerformanceExample
