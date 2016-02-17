@@ -24,6 +24,7 @@
 		9C7656181C50D58B0091E302 /* PandaKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656171C50D58B0091E302 /* PandaKitDemoTests.m */; };
 		9C7656231C50D58B0091E302 /* PandaKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7656221C50D58B0091E302 /* PandaKitDemoUITests.m */; };
 		9C7656801C50E1DE0091E302 /* PDKArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C76567F1C50E1DE0091E302 /* PDKArrayTest.m */; };
+		9CDCA0011C732A1800470E89 /* PDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDCA0001C732A1800470E89 /* PDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,9 @@
 		9C7656651C50E0F70091E302 /* PandaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandaKit.h; sourceTree = "<group>"; };
 		9C76566F1C50E0F70091E302 /* PDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCategory.h; sourceTree = "<group>"; };
 		9C76567F1C50E1DE0091E302 /* PDKArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKArrayTest.m; sourceTree = "<group>"; };
+		9CDC9FFF1C732A1800470E89 /* PDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDViewController.h; sourceTree = "<group>"; };
+		9CDCA0001C732A1800470E89 /* PDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDViewController.m; sourceTree = "<group>"; };
+		9CDCA0021C732CAD00470E89 /* PDMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDMVC.h; sourceTree = "<group>"; };
 		DBBDEE9289429C859DAA5586 /* libPods-PandaKitDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaKitDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F615E34334D881E90E739B2E /* Pods-PandaKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaKitDemo/Pods-PandaKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -291,6 +295,7 @@
 		9C7656711C50E0F70091E302 /* PDMVC */ = {
 			isa = PBXGroup;
 			children = (
+				9CDCA0021C732CAD00470E89 /* PDMVC.h */,
 				9C7656721C50E0F70091E302 /* PDBaseMVC */,
 				9C7656731C50E0F70091E302 /* PDPlugInManager */,
 				9C7656741C50E0F70091E302 /* PDRouter */,
@@ -301,6 +306,8 @@
 		9C7656721C50E0F70091E302 /* PDBaseMVC */ = {
 			isa = PBXGroup;
 			children = (
+				9CDC9FFF1C732A1800470E89 /* PDViewController.h */,
+				9CDCA0001C732A1800470E89 /* PDViewController.m */,
 			);
 			path = PDBaseMVC;
 			sourceTree = "<group>";
@@ -662,6 +669,7 @@
 				9C105F371C59C58900215A25 /* NSArray+PandaKit.m in Sources */,
 				9C7656051C50D58B0091E302 /* ViewController.m in Sources */,
 				9C105F341C59C57400215A25 /* NSNull+PandaKit.m in Sources */,
+				9CDCA0011C732A1800470E89 /* PDViewController.m in Sources */,
 				9C105F3E1C59F6B600215A25 /* NSObject+PandaKit.m in Sources */,
 				9C105F411C5A0D2900215A25 /* NSString+PandaKit.m in Sources */,
 				9C7656021C50D58B0091E302 /* AppDelegate.m in Sources */,

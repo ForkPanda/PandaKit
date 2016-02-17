@@ -23,6 +23,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.2.0):
     - CocoaLumberjack/Default
+  - JDFPeekaboo (0.2.1)
   - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.0)
   - SDWebImage (3.7.5):
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - AFNetworking
   - Aspects
   - CocoaLumberjack
+  - JDFPeekaboo
   - MBProgressHUD
   - MJRefresh
   - SDWebImage
@@ -41,6 +43,7 @@ SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  JDFPeekaboo: 24baf48f53e51210919f8160c1c235ccc7055021
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461

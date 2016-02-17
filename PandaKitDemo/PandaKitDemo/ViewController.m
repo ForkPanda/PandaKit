@@ -6,10 +6,10 @@
 //  Copyright © 2016年 panda. All rights reserved.
 //
 
-//#import "PandaKit.h"
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView* tableView;
 
 @end
 
@@ -19,11 +19,20 @@
 {
     [super viewDidLoad];
 
-    NSArray* arr1 = @[];
-    NSArray* arr2 = @[ @(1) ];
-    NSArray* arr3 = @[ @(1), @(2) ];
+    
+    [self autoHideNav:self.navigationController.navigationBar bar:self.tabBarController.tabBar withScroll:self.tableView];
+}
 
-    NSLog(@"%@ %@ %@", arr1.firstObject, arr2.firstObject, arr3.firstObject);
+- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 50;
+}
+
+- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.textLabel.text = @(indexPath.row).stringValue;
+    return cell;
 }
 
 @end

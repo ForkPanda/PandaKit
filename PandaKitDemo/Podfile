@@ -11,6 +11,7 @@ pod 'MBProgressHUD'
 pod 'CocoaLumberjack'
 pod 'MJRefresh'
 pod 'Aspects'
+pod 'JDFPeekaboo'
 
 end
 

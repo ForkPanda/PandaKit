@@ -6,10 +6,8 @@
 //  Copyright © 2016年 panda. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PandaKit.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : PDViewController
 
 @end
-
